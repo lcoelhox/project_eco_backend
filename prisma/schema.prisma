@@ -21,3 +21,11 @@ model User {
   celular    String
   created_at DateTime @default(now())   
 }
+
+model Locations {
+  id          Int      @id @default(autoincrement())
+  name        String
+  position    Float
+  
+  @@map("locations")
+}

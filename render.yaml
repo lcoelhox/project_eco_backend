@@ -1,0 +1,16 @@
+# render.yaml
+services:
+  - type: web
+    name: project-eco-backend
+    env: node
+    region: sa  # Região de São Paulo
+    plan: starter
+    startCommand: npm start
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: SUPABASE_URL
+        value: https://eqkmwemqydgzngjenvdh.supabase.co
+      - key: SUPABASE_KEY
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVxa213ZW1xeWRnem5namVudmRoIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTczMDE0MzQyMCwiZXhwIjoyMDQ1NzE5NDIwfQ.h4C4JZDj9ltXHIQzorLpPBnigAbM1R6KMtwM9CnXbzM
